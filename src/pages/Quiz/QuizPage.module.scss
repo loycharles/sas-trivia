@@ -1,0 +1,47 @@
+@import 'styles/_variables.scss';
+@import 'styles/_mixins.scss';
+
+.QuizPage {
+  max-width: 764px;
+  margin: 0 auto;
+  padding: 10px 32px 48px 32px;
+  position: relative;
+
+  @media (max-width: 575px) {
+    padding: 10px 0 75px 0;
+  }
+
+  h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-right: 90px;
+
+    @media (max-width: 575px) {
+      padding-left: 15px;
+    }
+  }
+
+  .quiz {
+    @include paper;
+
+    padding: 31px 40px 27px 40px;
+
+    @media (max-width: 575px) {
+      padding: 31px 24px 27px 24px;
+    }
+  }
+
+  .quizCloseBtn {
+    position: absolute;
+    top: 16px;
+    right: 40px;
+
+    @media (max-width: 575px) {
+      right: 16px;
+    }
+  }
+}

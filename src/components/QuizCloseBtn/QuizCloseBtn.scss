@@ -1,0 +1,22 @@
+@import 'styles/_variables.scss';
+
+.QuizCloseBtn {
+  display: inline-block;
+  color: $text-secondary-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+
+  svg {
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
+  span {
+    vertical-align: middle;
+    position: relative;
+    top: 1px;
+  }
+}

@@ -1,0 +1,47 @@
+@import 'styles/_variables.scss';
+@import 'styles/_mixins.scss';
+
+.QuizModalFeedback {
+  position: fixed;
+  z-index: 1300;
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  left: 0px;
+
+  .QuizModalFeedbackBackdrop {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    .QuizModalFeedbackContent {
+      @include paper;
+
+      width: 100%;
+      max-width: 328px;
+      margin: 24px;
+      padding: 30px;
+      text-align: center;
+
+      h3 {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        color: $text-dark-color;
+        margin-top: 10px;
+        margin-bottom: 31px;
+      }
+
+      &.Correct {
+        border: 3px solid $success-color;
+      }
+
+      &.Wrong {
+        border: 3px solid $error-color;
+      }
+    }
+  }
+}

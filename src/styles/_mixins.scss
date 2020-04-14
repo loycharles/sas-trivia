@@ -1,0 +1,6 @@
+@mixin paper {
+  background: $light-color;
+  box-shadow: 0px 1px 4px rgba(52, 60, 88, 0.4);
+  border-radius: 8px;
+  border: 1px solid $paper-border-color;
+}

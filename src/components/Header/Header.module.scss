@@ -1,0 +1,19 @@
+@import 'styles/_variables.scss';
+
+.mainHeader {
+  background-color: $primary-dark-color;
+  color: $text-light-color;
+  padding: 16px 26px;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+
+  h1 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

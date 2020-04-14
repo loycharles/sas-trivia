@@ -1,0 +1,39 @@
+@import 'styles/_variables.scss';
+@import 'styles/_mixins.scss';
+
+.CategoriesListPlaceholder {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0 -15px;
+
+  li {
+    padding: 12px 13px;
+    width: 25%;
+
+    @media (max-width: 767px) {
+      width: 33.33333333333333%;
+    }
+
+    @media (max-width: 575px) {
+      width: 50%;
+    }
+
+    &>div {
+      @include paper;
+
+      background-color: $background-disabled-color;
+      border: 0;
+      display: flex;
+      align-items: flex-end;
+      padding: 15px;
+      text-decoration: none;
+      color: $text-color;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      min-height: 104px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.CategoriesPage {
+  max-width: 1106px;
+  margin: 0 auto;
+  padding: 48px 32px;
+
+  @media (max-width: 575px) {
+    padding: 35px 24px;
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 56px;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    @media (max-width: 767px) {
+      font-size: 28px;
+      line-height: 36px;
+      margin-bottom: 0;
+    }
+  }
+}
