@@ -4,9 +4,13 @@ Desenvolvido e testado no Navegador Google Chrome
 
 Uma versão para testes online está disponível em [SAS Trivia](https://sas-trivia.herokuapp.com).
 
+Para iniciar o projeto localmente você precisa de um ambiente NODE.JS instalado e acessar a pasta e instalar as dependências através do comando:
+
+### `npm install`
+
 ## Available Scripts
 
-In the project directory, you can run:
+Iniciar o projeto localmente:
 
 ### `npm start`
 
